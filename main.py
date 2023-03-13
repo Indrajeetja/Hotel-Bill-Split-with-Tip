@@ -6,8 +6,10 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 #Write your code below this line 👇
-
-bill = input("What was the total bill? $")
-
-split = (int(bill)/5) * 1.12
+print("Welcome to tip calculator")
+bill = float(input("What was the total bill? $"))
+tip=int(input("How much tip would you like to give? 10 ,12, 15 "))
+people=int(input("How many people to split the bill "))
+total_amount = tip / 100 * bill + bill
+split= total_amount / people
 print(round(split))
